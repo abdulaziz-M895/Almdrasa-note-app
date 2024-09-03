@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <link rel="shortcut icon" href="/almdrasa-note-app/assets/favicon-d_FhsKOO.ico" type="image/x-icon" />
+
+    <title>Almdrasa Notes</title>
+    <script type="module" crossorigin src="/almdrasa-note-app/assets/index-BF-OL0Hp.js"></script>
+    <link rel="stylesheet" crossorigin href="/almdrasa-note-app/assets/index-CbbO4MIs.css">
+  </head>
+  <body class="d-flex">
+    <aside class="sidebar d-flex position-relative">
+      <div class="sidebar__search">
+        <img src="/almdrasa-note-app/assets/Logo-BP9vVZh8.svg" alt="logo" class="logo" />
+        <div class="sidebar__searchBox">
+          <img
+            class="sidebar__searchIcon"
+            src="data:image/svg+xml,%3csvg%20width='18'%20height='19'%20viewBox='0%200%2018%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_260_701)'%3e%3cpath%20d='M8.15625%2014.1186C11.4182%2014.1186%2014.0625%2011.4732%2014.0625%208.20993C14.0625%204.94667%2011.4182%202.30127%208.15625%202.30127C4.89432%202.30127%202.25%204.94667%202.25%208.20993C2.25%2011.4732%204.89432%2014.1186%208.15625%2014.1186Z'%20stroke='%23898989'%20stroke-width='1.125'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M12.332%2012.3882L15.7493%2015.8068'%20stroke='%23898989'%20stroke-width='1.125'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_260_701'%3e%3crect%20width='18'%20height='18.0073'%20fill='white'%20transform='translate(0%200.050293)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+            alt="search icon"
+          />
+          <input
+            type="search"
+            name="search"
+            id="search_notes"
+            placeholder="Search"
+          />
+        </div>
+        <div class="sidebar__mobileSearch">
+          <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_357_13)'%3e%3cpath%20d='M9.06226%2015.625C12.6866%2015.625%2015.6248%2012.6869%2015.6248%209.0625C15.6248%205.43813%2012.6866%202.5%209.06226%202.5C5.43789%202.5%202.49976%205.43813%202.49976%209.0625C2.49976%2012.6869%205.43789%2015.625%209.06226%2015.625Z'%20stroke='%23303030'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M13.7024%2013.7031L17.4993%2017.5'%20stroke='%23303030'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_357_13'%3e%3crect%20width='20'%20height='20'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="search icon" />
+        </div>
+        <div class="sidebar__menuIcon">
+          <img src="data:image/svg+xml,%3csvg%20width='22'%20height='17'%20viewBox='0%200%2022%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20.3711%202.87494L1.63048%202.87494C1.28564%202.87494%201.00582%202.45491%201.00584%201.93747C1.00587%201.41995%201.28577%201%201.63056%201L20.3712%201C20.716%201%2020.9958%201.42003%2020.9958%201.93747C20.9958%202.45491%2020.7159%202.87494%2020.3711%202.87494Z'%20fill='%23303030'%20stroke='white'%20stroke-width='0.2'/%3e%3cpath%20d='M1.63056%207.5625L20.3712%207.5625C20.716%207.5625%2020.9958%207.98253%2020.9958%208.49997C20.9958%209.0174%2020.7159%209.43743%2020.3711%209.43743L1.63048%209.43743C1.28564%209.43743%201.00583%209.0174%201.00585%208.49997C1.00587%207.98253%201.28572%207.5625%201.63056%207.5625Z'%20fill='%23303030'%20stroke='white'%20stroke-width='0.2'/%3e%3cpath%20d='M1.63081%2014.125L14.1244%2014.125C14.4692%2014.125%2014.7489%2014.545%2014.7487%2015.0625C14.7485%2015.58%2014.4685%2015.9999%2014.1237%2015.9999L1.63011%2015.9999C1.28528%2015.9999%201.00561%2015.5799%201.0058%2015.0625C1.00594%2014.545%201.28597%2014.125%201.63081%2014.125Z'%20fill='%23303030'%20stroke='white'%20stroke-width='0.2'/%3e%3c/svg%3e" alt="menu icon" />
+        </div>
+        <div class="sidebar__addNotes">
+          <img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%201.24459L17%2017M1%2016.7554L17%201'%20stroke='%23303030'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="close icon" />
+          <span class="notes">Notes</span>
+          <span class="addNote">Add Note</span>
+        </div>
+      </div>
+
+      <button class="sidebar__close">
+        <img src="data:image/svg+xml,%3csvg%20width='28'%20height='29'%20viewBox='0%200%2028%2029'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='14'%20cy='14.1697'%20r='13.5'%20fill='white'%20stroke='%23E7E7E9'/%3e%3cpath%20d='M16.5515%2015.828C16.5985%2015.8531%2016.625%2015.8872%2016.625%2015.9228C16.625%2015.9584%2016.5985%2015.9925%2016.5515%2016.0176L16.0247%2016.3006C15.9796%2016.3264%2015.9166%2016.3411%2015.8507%2016.3411C15.7848%2016.3411%2015.7219%2016.3264%2015.6768%2016.3006L11.1093%2013.8468C11.0394%2013.8093%2011.0001%2013.7584%2011%2013.7053L11%2013.6359C11.0001%2013.5828%2011.0394%2013.5319%2011.1093%2013.4944L15.6768%2011.0406C15.7219%2011.0148%2015.7848%2011.0001%2015.8507%2011.0001C15.9166%2011.0001%2015.9796%2011.0148%2016.0247%2011.0406L16.5515%2011.3236C16.5985%2011.3487%2016.625%2011.3828%2016.625%2011.4184C16.625%2011.454%2016.5985%2011.4881%2016.5515%2011.5132L12.5357%2013.6706L16.5515%2015.828Z'%20fill='%23898989'/%3e%3c/svg%3e" alt="Close notes list image" />
+      </button>
+      <div class="sidebar__notes">
+        <div class="sidebar__pinned">
+          <h6 class="orange-text">PINNED</h6>
+          <ul class="sidebar__notesList"></ul>
+        </div>
+        <div class="sidebar__normalNotes">
+          <h6 class="orange-text border-header">Notes</h6>
+          <ul class="sidebar__notesList"></ul>
+        </div>
+      </div>
+    </aside>
+    <section class="shownNote">
+      <ul class="shownNote__list"></ul>
+      <button class="shownNote__addNote addNote">
+        <img src="data:image/svg+xml,%3csvg%20width='115'%20height='116'%20viewBox='0%200%20115%20116'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_6502_189)'%3e%3crect%20x='25'%20y='16.3259'%20width='65'%20height='65'%20rx='32.5'%20fill='%23EC7160'/%3e%3cpath%20d='M73.3342%2047.3259H58.6675V32.6593C58.6675%2032.3056%2058.5271%2031.9665%2058.277%2031.7165C58.027%2031.4664%2057.6878%2031.3259%2057.3342%2031.3259C56.9806%2031.3259%2056.6414%2031.4664%2056.3914%2031.7165C56.1413%2031.9665%2056.0009%2032.3056%2056.0009%2032.6593V47.3259H41.3342C40.9806%2047.3259%2040.6414%2047.4664%2040.3914%2047.7165C40.1413%2047.9665%2040.0009%2048.3056%2040.0009%2048.6593C39.9943%2048.8325%2040.0249%2049.0052%2040.0907%2049.1657C40.1565%2049.3261%2040.256%2049.4706%2040.3823%2049.5894C40.5087%2049.7081%2040.659%2049.7984%2040.8232%2049.8542C40.9874%2049.91%2041.1617%2049.9299%2041.3342%2049.9126H56.0009V64.6593C56.0009%2065.0129%2056.1413%2065.352%2056.3914%2065.6021C56.6414%2065.8521%2056.9806%2065.9926%2057.3342%2065.9926C57.6878%2065.9926%2058.027%2065.8521%2058.277%2065.6021C58.5271%2065.352%2058.6675%2065.0129%2058.6675%2064.6593V49.9926H73.3342C73.6878%2049.9926%2074.027%2049.8521%2074.277%2049.6021C74.5271%2049.352%2074.6675%2049.0129%2074.6675%2048.6593C74.6675%2048.3056%2074.5271%2047.9665%2074.277%2047.7165C74.027%2047.4664%2073.6878%2047.3259%2073.3342%2047.3259Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_6502_189'%20x='0'%20y='0.325928'%20width='115'%20height='115'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset%20dy='9'/%3e%3cfeGaussianBlur%20stdDeviation='12.5'/%3e%3cfeComposite%20in2='hardAlpha'%20operator='out'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%200.92549%200%200%200%200%200.443137%200%200%200%200%200.376471%200%200%200%200.26%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_6502_189'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_6502_189'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e" alt="add note icon" />
+      </button>
+    </section>
+    <section class="addNoteSection d-none">
+      <h2 class="addNoteSection__header">Add Note</h2>
+      <form class="addNoteSection__form">
+        <div class="addNoteSection__div">
+          <label class="addNoteSection__label" for="title">Title*</label>
+          <input class="addNoteSection__input" type="text" id="title" />
+        </div>
+        <div class="addNoteSection__div">
+          <label class="addNoteSection__label" for="author">Author*</label>
+          <input class="addNoteSection__input" type="text" id="author" />
+        </div>
+        <div class="addNoteSection__div">
+          <label class="addNoteSection__label" for="yourNote">Your Note*</label>
+          <textarea
+            class="addNoteSection__input addNoteSection__textarea"
+            id="yourNote"
+          ></textarea>
+        </div>
+        <button type="submit" class="addNoteSection__submit normal">
+          Add note
+        </button>
+        <button type="submit" class="addNoteSection__submit pinned">
+          Add pinned note
+        </button>
+      </form>
+    </section>
+  </body>
+</html>
