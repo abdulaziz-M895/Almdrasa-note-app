@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/styles.scss" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <title>Almdrasa Notes</title>
+  </head>
+  <body class="d-flex">
+    <aside class="sidebar d-flex position-relative">
+      <div class="sidebar__search">
+        <img src="images/Logo.svg" alt="logo" class="logo" />
+        <div class="sidebar__searchBox">
+          <img
+            class="sidebar__searchIcon"
+            src="images/search.svg"
+            alt="search icon"
+          />
+          <input
+            type="search"
+            name="search"
+            id="search_notes"
+            placeholder="Search"
+          />
+        </div>
+        <div class="sidebar__mobileSearch">
+          <img src="images/search-mobile.svg" alt="search icon" />
+        </div>
+        <div class="sidebar__menuIcon">
+          <img src="images/Menu.svg" alt="menu icon" />
+        </div>
+        <div class="sidebar__addNotes">
+          <img src="images/close.svg" alt="close icon" />
+          <span class="notes">Notes</span>
+          <span class="addNote">Add Note</span>
+        </div>
+      </div>
+
+      <button class="sidebar__close">
+        <img src="images/arrow.svg" alt="Close notes list image" />
+      </button>
+      <div class="sidebar__notes">
+        <div class="sidebar__pinned">
+          <h6 class="orange-text">PINNED</h6>
+          <ul class="sidebar__notesList"></ul>
+        </div>
+        <div class="sidebar__normalNotes">
+          <h6 class="orange-text border-header">Notes</h6>
+          <ul class="sidebar__notesList"></ul>
+        </div>
+      </div>
+    </aside>
+    <section class="shownNote">
+      <ul class="shownNote__list"></ul>
+      <button class="shownNote__addNote addNote">
+        <img src="images/plus.svg" alt="add note icon" />
+      </button>
+    </section>
+    <section class="addNoteSection d-none">
+      <h2 class="addNoteSection__header">Add Note</h2>
+      <form class="addNoteSection__form">
+        <div class="addNoteSection__div">
+          <label class="addNoteSection__label" for="title">Title*</label>
+          <input class="addNoteSection__input" type="text" id="title" />
+        </div>
+        <div class="addNoteSection__div">
+          <label class="addNoteSection__label" for="author">Author*</label>
+          <input class="addNoteSection__input" type="text" id="author" />
+        </div>
+        <div class="addNoteSection__div">
+          <label class="addNoteSection__label" for="yourNote">Your Note*</label>
+          <textarea
+            class="addNoteSection__input addNoteSection__textarea"
+            id="yourNote"
+          ></textarea>
+        </div>
+        <button type="submit" class="addNoteSection__submit normal">
+          Add note
+        </button>
+        <button type="submit" class="addNoteSection__submit pinned">
+          Add pinned note
+        </button>
+      </form>
+    </section>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
