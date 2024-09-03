@@ -1,7 +1,7 @@
 (function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))e(r);new MutationObserver(r=>{for(const a of r)if(a.type==="childList")for(const s of a.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&e(s)}).observe(document,{childList:!0,subtree:!0});function t(r){const a={};return r.integrity&&(a.integrity=r.integrity),r.referrerPolicy&&(a.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?a.credentials="include":r.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function e(r){if(r.ep)return;r.ep=!0;const a=t(r);fetch(r.href,a)}})();const B=document.createElement("li");B.className="shownNote__EmptyList";B.innerHTML=`
               <img
                 class="EmptyList__img"
-                src="./images/icon-empty.svg"
+                src="./assets/images/icon-empty.svg"
                 alt="list is empty"
               />
               <p>Nothing here yet. Start taking notes!</p>
