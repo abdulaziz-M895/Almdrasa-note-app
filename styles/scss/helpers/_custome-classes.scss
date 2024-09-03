@@ -1,0 +1,12 @@
+.gray-text {
+  color: var(--color-gray-text);
+}
+.orange-text {
+  color: var(--color-orange-text);
+}
+.orange-hover-text {
+  color: var(--color-orange-text);
+  &:hover {
+    color: var(--color-orange-text-hover);
+  }
+}
